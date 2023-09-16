@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Task List</h1>
+    </header>
+    <main>
+        <section class="task-list">
+            <h2>Task List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Tasks will be dynamically populated here -->
+                </tbody>
+            </table>
+        </section>
+        <section class="add-task">
+            <h2>Add Task</h2>
+            <form id="addTaskForm">
+                <label for="title">Title:</label>
+                <input type="text" id="title" required>
+                <label for="description">Description:</label>
+                <input type="text" id="description" required>
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+    </main>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
